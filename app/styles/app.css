@@ -1,0 +1,24 @@
+.header{
+	height:50px;
+	background-color: #577492;
+}
+
+.header h2{
+	margin:5px;
+}
+.content{
+	top:50px;
+	bottom:50px;
+	position: absolute;
+	background-color: white;
+}
+html{
+	background-color: #F0F5ED;
+}
+.right{
+	position:absolute;
+	right:20px;
+	top:10px;
+	display:inline;
+	width:15% !Important;
+}
