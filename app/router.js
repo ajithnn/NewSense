@@ -6,9 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-	this.resource("/",function(){
-		    this.route('search');
-	});
+  this.resource('feeds', { path: '/' }, function() {
+  });
 });
 
 export default Router;

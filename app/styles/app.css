@@ -5,6 +5,7 @@
 
 .header h2{
 	margin:5px;
+	color:white;
 }
 .content{
 	top:50px;
@@ -14,6 +15,8 @@
 }
 html{
 	background-color: #F0F5ED;
+	width:100%;
+	overflow-x: hidden;
 }
 .right{
 	position:absolute;
@@ -21,4 +24,15 @@ html{
 	top:10px;
 	display:inline;
 	width:15% !Important;
+}
+.frame{
+	width:100%;
+}
+.feed-title{
+	color:#577492;
+	padding:10px;
+}
+
+.feed-content{
+	padding:10px;
 }
