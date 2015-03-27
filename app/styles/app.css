@@ -36,3 +36,16 @@ html{
 .feed-content{
 	padding:10px;
 }
+
+.item{
+	width:300px;
+}
+
+.masonry {
+  max-width: 640px;
+}
+.masonry .item {
+  width:  60px;
+  height: 60px;
+  float: left;
+  }
