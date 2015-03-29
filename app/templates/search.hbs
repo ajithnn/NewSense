@@ -1,1 +1,7 @@
-<div>{{title}}</div>
+<h3>Search Results: </h3>
+{{#each feed in model}}
+<h4 class="feed-title">{{feed.title}}</h4>
+<div class="feed-content">
+<p>{{feed.content}}</p>
+</div>
+{{/each}}

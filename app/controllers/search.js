@@ -1,9 +1,15 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-	needs: "application",
-	appplic: Ember.computed.alias("controllers.application"),
-  actions: {
-  }
-
+export
+default Ember.ArrayController.extend({
+    actions: {
+        SearchFeeds: function(data) {
+        	console.log(data);
+            this.transitionToRoute('search', {
+                queryParams: data
+            });
+        }
+    },
+    queryParams: ['searchText'],
+    searchText: null
 });

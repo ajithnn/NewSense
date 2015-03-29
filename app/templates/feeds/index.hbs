@@ -1,11 +1,5 @@
-<div id="container" class="js-masonry" data-masonry-options='{ "columnWidth": 300, "gutter": 10, "isFitWidth": true,"itemSelector": ".item","containerStyle": "null" }'>
+<div id="container">
 {{#each feed in model itemController="feed"}}
-<div class="item">
-	<h4 class="feed-title">{{#link-to 'feed' feed}} {{feed.title}} {{/link-to}}</h4>
-	<div class="feed-content">
-		<p>{{feed.displayContent}}</p>
-	</div>
-</div>
+{{view "mason"}}
 {{/each}}
 </div>
-<script src="assets/masonry.pkgd.min.js"></script>

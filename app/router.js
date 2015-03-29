@@ -9,6 +9,8 @@ Router.map(function() {
   this.resource('feeds', { path: '/' }, function() {
   	this.resource("feed", { path: "/:feed_id" }, function(){
   	});
+  	  	this.resource("search", { path: "/search" }, function(){
+  	});
   });
 });
 
