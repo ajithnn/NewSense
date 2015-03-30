@@ -10,9 +10,24 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get('/', function(req, res) {
+app.get('/load', function(req, res) {
     request.get({
-            uri: 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://www.digg.com/rss/index.xml',
+            uri: 'https://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=' + req.query.load,
+            json: true
+        },
+        function(err, resp, data) {
+            if (!err) {
+                res.send(data);
+            } else {
+                res.send("error");
+            }
+        });
+})
+
+
+app.get('/find', function(req, res) {
+    request.get({
+            uri: 'https://ajax.googleapis.com/ajax/services/feed/find?v=1.0&q=' + req.query.find,
             json: true
         },
         function(err, resp, data) {

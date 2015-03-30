@@ -7,7 +7,7 @@ export default Ember.Route.extend({
     }
 },
  model: function(params) {
-   	return Ember.$.getJSON('http://localhost:3000/').then(function(data)
+   	return Ember.$.getJSON('http://localhost:3000/load?load=http://www.digg.com/rss/index.xml').then(function(data)
     	{
     		var retData = [];
     		$(data.responseData.feed.entries).each(function(i,d){
